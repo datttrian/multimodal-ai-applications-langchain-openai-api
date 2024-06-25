@@ -1,0 +1,3 @@
+pip install --quiet openai yt_dlp docarray
+pip install --quiet langchain langchain-community
+pip install --quiet tiktoken
