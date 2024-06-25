@@ -1,3 +1,7 @@
-pip install --quiet openai yt_dlp docarray
-pip install --quiet langchain langchain-community
-pip install --quiet tiktoken
+docarray==0.40.0
+langchain==0.2.5
+langchain-community==0.2.5
+openai==1.35.3
+python-dotenv==1.0.1
+tiktoken==0.7.0
+yt-dlp==2024.5.27
