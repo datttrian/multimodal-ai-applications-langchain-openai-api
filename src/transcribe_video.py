@@ -29,3 +29,14 @@ transcription = client.audio.transcriptions.create(
     model="whisper-1",
     file=audio_file
 )
+
+# Extract the transcript from the response
+transcript = (transcription.text)
+
+# If an output file is specified, save the transcript to a .txt file
+if output_file is not None:
+    # Create the directory for the output file if it doesn't exist
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    # Write the transcript to the output file
+    with open(output_file, "w") as file:
+        file.write(transcript)
